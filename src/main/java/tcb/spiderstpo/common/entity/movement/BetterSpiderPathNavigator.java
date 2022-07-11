@@ -49,7 +49,7 @@ public class BetterSpiderPathNavigator<T extends Mob & IClimberEntity> extends A
 			if(this.targetPosition != null && this.useVanillaBehaviour) {
 				// FORGE: Fix MC-94054
 				Vec3i mobPos = new Vec3i(this.mob.position().x, this.mob.position().y, this.mob.position().y);
-				if(!this.targetPosition.closerThan(mobPos, Math.max((double) this.mob.getBbWidth(), 1.0D)) && (!(this.mob.getY() > (double) this.targetPosition.getY()) || !(new BlockPos((double) this.targetPosition.getX(), this.mob.getY(), (double) this.targetPosition.getZ())).closerThan(mobPos, Math.max((double) this.mob.getBbWidth(), 1.0D)))) {
+				if(!this.targetPosition.closerThan(mobPos, Math.max((double) this.mob.getBbWidth(), 1.0D)) && (!((double) this.mob.getY() > (double) this.targetPosition.getY()) || !(new BlockPos((double) this.targetPosition.getX(), (double) this.mob.getY(), (double) this.targetPosition.getZ())).closerThan(mobPos, Math.max((double) this.mob.getBbWidth(), 1.0D)))) {
 					this.mob.getMoveControl().setWantedPosition((double) this.targetPosition.getX(), (double) this.targetPosition.getY(), (double) this.targetPosition.getZ(), this.speedModifier);
 				} else {
 					this.targetPosition = null;
