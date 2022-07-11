@@ -40,7 +40,7 @@ Spiders 2.0 enables spiders to walk along walls and ceilings and it also improve
 [[dependencies.spiderstpo]]
     modId="forge"
     mandatory=true
-    versionRange="[34,)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
     
