@@ -10,3 +10,5 @@ https://github.com/TheCyberBrick/Spiders-2.0
 
 Original download of the mod can be found here: 
 https://www.curseforge.com/minecraft/mc-mods/spiders-2-0
+
+1.18.1 port credits go to CorgiTaco (https://github.com/CorgiTaco)
